@@ -1,0 +1,52 @@
+fun verifyAge (){
+    print("Ingresa edad y presiona en enter (escribe sólo el número):")
+    val age= readLine()?.toInt()
+    if (age?.equals(18)!!){
+        println("Ya eres mayor de edad!")
+    }
+    if (age!! >=18){
+        println("Ya eres mayor de edad!")
+    }else if(age!! == 18){
+        println("Acabas de cumplir la mayoría de edad")
+    }
+    else{
+        println("Eres menor de edad!")
+    }
+}
+
+fun gradoEscolar(){
+    print("Ingresa edad y presiona enter:")
+    val age= readLine()?.toInt()
+    when(age) {
+        0 -> println("Apenas eres recién nacido!")
+        1 -> println("Sólo tienes un año de edad")
+        in 2..5 -> println ("Estás en preescolar")
+        in 6..11 -> println ("Estás en la primaria")
+        in 12..14 -> println ("Estás en secundaria")
+        in 15..17 -> println ("Estás en bachillerato")
+        in 18..25 -> println ("Estás en universidad")
+        else ->{
+            println("Edad invalida")
+            println("Vuelve a escribir el código")
+        }
+    }
+}
+
+
+fun Tipodato(Dato:Any){
+    print("Escribe una letra, numero lo que quieras")
+    when (Dato){
+        is String-> println ("Es un string")
+        is Double-> println ("Es un Double")
+        is Int-> println ("Es un Int")
+        is Any-> println ("Es otro tipo de dato")
+    }
+}
+fun main() {
+    println("Hello, world!!!")
+    verifyAge()
+    //gradoEscolar()
+    //val Dato = readLine()
+    //Tipodato(Dato)
+
+}
