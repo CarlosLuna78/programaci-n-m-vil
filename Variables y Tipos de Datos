@@ -1,0 +1,14 @@
+fun main() {
+    println("Luna Gonzalez Carlos Jair")
+    
+    var numero : Float= 2.2F
+    println(numero)
+    
+    var numerod = numero.toDouble()
+    println("${numero::class.simpleName}")
+    println("${numerod::class.simpleName}")
+    
+    val pi=3.1416
+    var peri= pi*(2*numero)
+    println("El perimetro del circulo es ${peri}")
+}
